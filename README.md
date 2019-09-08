@@ -37,7 +37,7 @@
     
 4. Download and install [betterdiscord](https://github.com/rauenzi/BetterDiscordApp/releases)
 
-5. Go to [releases](/releases) and download the plugin for betterdiscord
+5. Go to [releases](https://github.com/lonkaars/sc-np/releases) and download the plugin for betterdiscord
 
 6. Unzip into C:\Users\%Your User Name%\AppData\Roaming\BetterDiscord\Plugins
 
