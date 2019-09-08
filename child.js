@@ -1,9 +1,9 @@
 // Imports
-var WebSocketServer = require('websocket').server;
+var WebSocketServer = require(__dirname + '/node_modules/websocket').server;
 var http = require('http');
-var cheerio = require('cheerio')
+var cheerio = require(__dirname + '/node_modules/cheerio')
 var server = http.createServer(function (request, response) {});
-var p = require('discord-rich-presence')('619833473901002752');
+var p = require(__dirname + '/node_modules/discord-rich-presence')('619833473901002752');
 var song, artist, paused, t;
 var playing = null;
 var pt = false;
@@ -46,6 +46,9 @@ function setActivity() {
         })
     } else if (playing == false) {
         // Discord sees child.js as the game that it's getting rich presence from so it restarts here to remove the presence when you close soundcloud
+        p.updatePresence({
+            details: 'Stopped Listening'
+        })
         process.exit(0);
     }
 }
