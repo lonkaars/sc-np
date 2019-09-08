@@ -2,14 +2,7 @@
 
 ## Soundcloud Rich Presence for Discord
 
-<div style="padding: 10px; border-radius: 10px; background: #6c82cf; color: #fff; display: inline-block">
-    <b style="text-transform: uppercase">Playing a game</b><br>
-    <div style="height:10px;"></div>
-	<b style="margin: 0;">Soundcloud</b>
-	<p style="margin: 0;">Strong Dragon - Libre</p>
-	<p style="margin: 0;">by more creativity records</p>
-	<p style="margin: 0;">1:27 left</p>
-</div>
+![coolpic](E:\sc-np\coolpic.png)
 
 ### Installation instructions
 
