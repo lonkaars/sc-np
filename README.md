@@ -2,6 +2,8 @@
 
 ## Soundcloud Rich Presence for Discord
 
+<img src="./coolpic.png" style="text-align: center"/>
+
 ### Installation instructions
 
 1. Install Tampermonkey (Chrome) or Greasemonkey (Firefox)
