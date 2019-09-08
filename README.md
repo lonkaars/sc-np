@@ -2,7 +2,7 @@
 
 ## Soundcloud Rich Presence for Discord
 
-<img src="./coolpic.png" style="text-align: center"/>
+<img src="./coolpic.png" style="text-align: center; margin:0 auto;"/>
 
 ### Installation instructions
 
@@ -41,7 +41,7 @@
 
 5. Go to [releases](https://github.com/lonkaars/sc-np/releases) and download the plugin for betterdiscord
 
-6. Unzip into C:\Users\%Your User Name%\AppData\Roaming\BetterDiscord\Plugins
+6. Unzip into C:/Users/%Your User Name%/AppData/Roaming/BetterDiscord/Plugins
 
     The file structure should look like this:
 
