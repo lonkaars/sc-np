@@ -2,41 +2,21 @@
 
 ## Soundcloud Rich Presence for Discord
 
-<img src="./coolpic.png" style="text-align: center; margin:0 auto;"/>
+<div style="padding: 10px; border-radius: 10px; background: #6c82cf; color: #fff; display: inline-block">
+    <b style="text-transform: uppercase">Playing a game</b><br>
+    <div style="height:10px;"></div>
+	<b style="margin: 0;">Soundcloud</b>
+	<p style="margin: 0;">Strong Dragon - Libre</p>
+	<p style="margin: 0;">by more creativity records</p>
+	<p style="margin: 0;">1:27 left</p>
+</div>
 
 ### Installation instructions
 
 1. Install Tampermonkey (Chrome) or Greasemonkey (Firefox)
 
-2. Create new script
+2. Install [this](https://gist.github.com/lonkaars/00a87b495f11b7cc554cb05443929f88/raw/edb4cf7faa6dc3249f5d4b8e0722a3a0be537b3b/sc-np-tampermonkey.user.js) script (script source can be found under the [releases](https://github.com/lonkaars/sc-np/releases) section)
 
-3. Paste into script: 
-
-    ```js
-    // ==UserScript==
-    // @name         Soundcloud Now Playing Rich Presence
-    // @namespace    https://soundcloud.com/
-    // @version      0.1
-    // @description  Displays current song on discord as now playing https://github.com/lonkaars/sc-np
-    // @author       Loekaars
-    // @match        https://soundcloud.com/*
-    // @grant        none
-    // ==/UserScript==
-    
-    (() => {
-        var socket = new WebSocket('ws://127.0.0.1:6969');
-        setInterval(() => {
-            if(socket.readyState == 1){
-                socket.send(document.querySelector('.playbackSoundBadge').innerHTML + `$$$$$${document.querySelector('.playControl.playControls__play').classList.contains('playing')}$$$$$` + `%%%${document.querySelector('.playbackTimeline__timePassed').innerHTML}-${document.querySelector('.playbackTimeline__duration').innerHTML}%%%`)
-            }
-            if(socket.readyState == 3){
-                // try to reconnect
-                socket = new WebSocket('ws://127.0.0.1:6969');
-            }
-        }, 1000);
-    })();
-    ```
-    
 4. Download and install [betterdiscord](https://github.com/rauenzi/BetterDiscordApp/releases)
 
 5. Go to [releases](https://github.com/lonkaars/sc-np/releases) and download the plugin for betterdiscord
@@ -52,7 +32,7 @@
     └── soundcloud-now-playing.plugin.js
     ```
 
-7. Enable the plugin in settings
+7. Enable the plugin in Discord settings
 
 
 
