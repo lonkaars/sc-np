@@ -2,7 +2,7 @@
 
 ## Soundcloud Rich Presence for Discord
 
-![coolpic](E:\sc-np\coolpic.png)
+![coolpic](./coolpic.png)
 
 ### Installation instructions
 
