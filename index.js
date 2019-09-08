@@ -6,10 +6,17 @@ var child = fork(__dirname + '/child.js');
 
 // Spawn and restart child
 child.on('exit', c => {
-    setTimeout(() => {
-        child = fork(__dirname + '/child.js')
-    }, 4000);
+    restart()
 })
+
+function restart() {
+    setTimeout(() => {
+        child = fork(__dirname + '/child.js');
+        child.on('exit', c => {
+            restart()
+        })
+    }, 4000);
+}
 
 // Keep open
 process.stdin.resume();

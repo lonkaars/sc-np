@@ -27,7 +27,7 @@
         var socket = new WebSocket('ws://127.0.0.1:6969');
         setInterval(() => {
             if(socket.readyState == 1){
-                socket.send(document.querySelector('.playbackSoundBadge').innerHTML + `$$$$$${document.querySelector('.playControl.playControls__play').classList.contains('playing')}$$$$$`)
+                socket.send(document.querySelector('.playbackSoundBadge').innerHTML + `$$$$$${document.querySelector('.playControl.playControls__play').classList.contains('playing')}$$$$$` + `%%%${document.querySelector('.playbackTimeline__timePassed').innerHTML}-${document.querySelector('.playbackTimeline__duration').innerHTML}%%%`)
             }
             if(socket.readyState == 3){
                 // try to reconnect
